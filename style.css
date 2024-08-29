@@ -1,0 +1,14 @@
+:root {
+    --text-color: orange;
+}
+
+
+
+#first-heading {
+    color: var(--text-color);
+    font-size: 30px;
+}
+
+.second-heading {
+    color: grey;
+}
