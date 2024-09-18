@@ -1,0 +1,40 @@
+:root {
+    --primary-color: rgb(158, 101, 101);
+}
+
+* {
+    margin: 0px;
+    padding: 10px;
+}
+
+
+.box1 {
+    width: 50%;
+    background-color: rgb(125, 123, 58);
+    content: "Hello everyone"
+}
+
+a::after {
+    content: "( " attr(href) ")";
+}
+
+.box1::after {
+    content: "Go home, then talk: !!!" attr(hello-title);
+}
+
+
+.box1::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: bisque;
+}
+
+.box1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: bisque;
+}
