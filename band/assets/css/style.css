@@ -1,0 +1,300 @@
+/* Reset CSS */
+/* border: size style color; */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text-white {
+    color: white !important;
+}
+
+:root {
+    --base-color: rgb(28, 43, 77);
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+#main {}
+
+#header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    background-color: var(--base-color)
+}
+
+#nav {
+    display: inline-block;
+}
+
+.search-btn {
+    float: right;
+    line-height: 50px;
+    font-size: 21px;
+    padding: 0 20px;
+    color: #78B7D0;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #3A6D8C;
+    color: #EAD8B1;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+.search-icon {}
+
+#nav .nav-row-down {
+    font-size: 14px;
+}
+
+#nav li a {
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 24px;
+    display: block;
+
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav>li>a {
+    text-transform: uppercase;
+}
+
+
+#nav>li:hover>a,
+#nav .subnav li:hover a {
+    color: rgb(26, 26, 16);
+    background-color: rgb(86, 115, 140);
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: var(--base-color);
+}
+
+#nav .subnav li {
+    display: block;
+    text-transform: none;
+}
+
+#slider {
+    position: relative;
+    margin-top: 50px;
+    padding: 30%;
+    border-bottom: 2px solid #384B70;
+    background: url('/band/assets/image/slider1.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(28, 43, 77, 0.7);
+    border: 3px solid #384B70;
+    border-radius: 8%;
+}
+
+#slider .text-content .text-heading {
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #c4cdd2;
+    opacity: 0.9;
+    font-style: normal;
+}
+
+#slider .text-content .text-description {
+    color: white;
+    opacity: 0.6;
+    font-style: italic;
+}
+
+#content .section-content {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+    color: var(--base-color);
+}
+
+
+#content .section-sub-heading {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+#content .section-heading {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 4px;
+
+
+}
+
+#content .about-text {
+    font-size: 15px;
+    text-align: justify;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+#content {
+    height: 1000px;
+
+}
+
+#content .member-item {
+    float: left;
+    margin-right: 169px;
+    margin-bottom: 50px;
+}
+
+#content .member-name {
+    font-size: 18px;
+    color: var(--base-color);
+    text-align: center;
+    font-weight: bold;
+}
+
+#content .member-img {
+    width: 153.9px;
+    /* min-height: 153.59px;
+    max-height: auto; */
+    float: left;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+#content .member-list {
+    margin-top: 38px;
+    overflow: hidden;
+}
+
+#img-last {
+    margin-right: 0px !important;
+}
+
+
+.tour-section {
+    background-color: var(--base-color);
+    width: 100%;
+}
+
+#content .tickets-list {
+    background-color: #DEE5D4;
+    width: 100%;
+}
+
+#content .sold-out {
+    border-radius: 18%;
+    background-color: #A04747;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    animation: blink 1s infinite;
+}
+
+
+#content .tickets-list li {
+    padding: 10px 8px;
+    border: 1px solid var(--base-color);
+}
+
+#content .ticket-number {
+    float: right;
+    background-color: #3A6D8C;
+    color: white;
+    font-weight: 800;
+    width: 18.5px;
+    border-radius: 50%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+#content .place-item {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+#content .body-item {
+    flex-basis: 30%;
+    /* Mỗi body-item chiếm 30% chiều rộng */
+    text-align: center;
+    /* Căn giữa các phần con */
+    background-color: #DEE5D4;
+    border-radius: 5px;
+}
+
+#content .stadium-img {
+    width: 100%;
+    /* Đảm bảo ảnh lấp đầy khung */
+    height: auto;
+    /* Duy trì tỷ lệ hình ảnh */
+    border-radius: 5px;
+}
+
+#content .heading-item {
+    margin-top: 10px;
+    font-size: medium;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.buy-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #78B7D0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buy-btn:hover {
+    background-color: #3A6D8C;
+}
+
+#footer {}

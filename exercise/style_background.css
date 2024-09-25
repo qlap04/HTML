@@ -1,0 +1,31 @@
+/* .header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(0, rgba(39, 37, 164, 0.5), rgba(255, 245, 0, 0.5)), url(https://i.pinimg.com/736x/f1/6a/4a/f16a4ac654c1400dbe2383e5f05af1e9.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 5px, dashed, black;
+    background-origin: border-box;
+    background-position: center;
+} */
+
+h1 {
+    position: relative;
+    margin-top: 100px;
+
+}
+
+.box-parent {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(19, 157, 111);
+    position: relative;
+}
+
+.box-child {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    margin-left: 30px;
+}

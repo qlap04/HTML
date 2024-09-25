@@ -1,0 +1,18 @@
+.title {
+    padding: 0 16px;
+    color: rgb(5, 36, 36);
+    background-color: blue;
+
+}
+
+.title {
+    bottom: 20px;
+}
+
+h1 {
+    margin-top: 60px;
+}
+
+ol {
+    height: 2000px;
+}
